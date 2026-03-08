@@ -353,6 +353,7 @@ MODEL_MAPPING_NAMES = OrderedDict(
         ("qwen2_5_vl", "Qwen2_5_VLModel"),
         ("qwen2_5_vl_text", "Qwen2_5_VLTextModel"),
         ("qwen2_audio_encoder", "Qwen2AudioEncoder"),
+        ("tinyaya_audio_encoder", "TinyAyaAudioEncoder"),
         ("qwen2_moe", "Qwen2MoeModel"),
         ("qwen2_vl", "Qwen2VLModel"),
         ("qwen2_vl_text", "Qwen2VLTextModel"),
@@ -702,6 +703,7 @@ MODEL_FOR_CAUSAL_LM_MAPPING_NAMES = OrderedDict(
         ("plbart", "PLBartForCausalLM"),
         ("prophetnet", "ProphetNetForCausalLM"),
         ("qwen2", "Qwen2ForCausalLM"),
+        ("tinyaya_audio", ("TinyAyaAudioForConditionalGeneration", "transformers.models.tinyaya_audio")),
         ("qwen2_moe", "Qwen2MoeForCausalLM"),
         ("qwen3", "Qwen3ForCausalLM"),
         ("qwen3_5", "Qwen3_5ForCausalLM"),  # VLM compatibility

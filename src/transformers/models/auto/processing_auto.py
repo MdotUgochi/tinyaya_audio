@@ -139,6 +139,7 @@ else:
             ("qwen2_5_omni", "Qwen2_5OmniProcessor"),
             ("qwen2_5_vl", "Qwen2_5_VLProcessor"),
             ("qwen2_audio", "Qwen2AudioProcessor"),
+            ("tinyaya_audio", ("TinyAyaAudioProcessor", "transformers.models.tinyaya_audio")),
             ("qwen2_vl", "Qwen2VLProcessor"),
             ("qwen3_5", "Qwen3VLProcessor"),
             ("qwen3_5_moe", "Qwen3VLProcessor"),
