@@ -1,0 +1,5 @@
+open_asr_leaderboard/ 
+transformers/ 
+venv/ 
+__pycache__/ 
+*.pyc 
