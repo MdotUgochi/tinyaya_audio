@@ -1,5 +1,6 @@
 import sys
-sys.path.insert(0, '/content/tinyaya_audio/src')import argparse
+sys.path.insert(0, '/content/tinyaya_audio/src')
+import argparse
 import os
 import torch
 import numpy as np
