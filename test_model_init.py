@@ -6,10 +6,11 @@ from transformers import AutoConfig
 from transformers.models.cohere2 import Cohere2Config
 
 text_cfg = Cohere2Config(
-    hidden_size=256,
-    num_hidden_layers=2,
-    num_attention_heads=4,
-    intermediate_size=512,
+    hidden_size=2048,
+    num_hidden_layers=36,
+    num_attention_heads=16,
+    num_key_value_heads=4,
+    intermediate_size=11008,
 )
 
 config = TinyAyaAudioConfig(
@@ -17,10 +18,10 @@ config = TinyAyaAudioConfig(
     audio_token_index=261002,  # confirmed value
     audio_config={
         "model_type": "tinyaya_audio_encoder",
-        "d_model": 64,
-        "encoder_layers": 2,
-        "encoder_attention_heads": 4,
-        "encoder_ffn_dim": 128,
+        "d_model": 1280,
+        "encoder_layers": 32,
+        "encoder_attention_heads": 20,
+        "encoder_ffn_dim": 5120,
         "num_mel_bins": 128,
         "max_source_positions": 1500,
     }

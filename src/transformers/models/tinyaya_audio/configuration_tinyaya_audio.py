@@ -10,7 +10,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""Qwen2Audio model configuration"""
+"""TinyAyaAudio model configuration"""
 
 from ...configuration_utils import PreTrainedConfig
 from ...utils import logging
@@ -23,7 +23,7 @@ logger = logging.get_logger(__name__)
 class TinyAyaAudioEncoderConfig(PreTrainedConfig):
     r"""
     This is the configuration class to store the configuration of a [`Qwen2AudioEncoder`]. It is used to instantiate a
-    Qwen2-Audio audio encoder according to the specified arguments, defining the model architecture. Instantiating a
+    TinyAyaAudio audio encoder according to the specified arguments, defining the model architecture. Instantiating a
     configuration with the defaults will yield a similar configuration to that of the audio encoder of the Qwen2-Audio
     architecture.
 
@@ -66,13 +66,14 @@ class TinyAyaAudioEncoderConfig(PreTrainedConfig):
     Example:
 
     ```python
-    >>> from transformers import Qwen2AudioEncoderConfig, Qwen2AudioEncoder
+    >>> >>> from transformers import TinyAyaAudioForConditionalGeneration, TinyAyaAudioConfig, TinyAyaAudioEncoderConfig
+    >>>  from transformers import Cohere2Config
 
     >>> # Initializing a Qwen2AudioEncoderConfig
-    >>> configuration = Qwen2AudioEncoderConfig()
+    >>> configuration = TinyAyaAudioEncoderConfig()
 
     >>> # Initializing a Qwen2AudioEncoder (with random weights)
-    >>> model = Qwen2AudioEncoder(configuration)
+    >>> model = TinyAyaAudioEncoder(configuration)
 
     >>> # Accessing the model configuration
     >>> configuration = model.config
@@ -118,10 +119,10 @@ class TinyAyaAudioEncoderConfig(PreTrainedConfig):
 class TinyAyaAudioConfig(PreTrainedConfig):
     r"""
     This is the configuration class to store the configuration of a [`Qwen2AudioForConditionalGeneration`]. It is used to instantiate an
-    Qwen2-Audio model according to the specified arguments, defining the model architecture. Instantiating a configuration
+    TinyAyaAudio model according to the specified arguments, defining the model architecture. Instantiating a configuration
     with the defaults will yield a similar configuration to that of the Qwen2-Audio.
 
-    e.g. [Qwen/Qwen2-Audio-7B](https://huggingface.co/Qwen/Qwen2-Audio-7B)
+    e.g. [CohereLabs/tiny-aya-base](https://huggingface.co/CohereLabs/tiny-aya-base)
 
     Configuration objects inherit from [`PreTrainedConfig`] and can be used to control the model outputs. Read the
     documentation from [`PreTrainedConfig`] for more information.
