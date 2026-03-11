@@ -1,7 +1,5 @@
 import sys
-sys.path.insert(0, r"C:\Users\USER\Desktop\ListAya\transformers\src")
-sys.path.insert(0, r"C:\Users\USER\Desktop\ListAya\open_asr_leaderboard")
-import argparse
+sys.path.insert(0, '/content/tinyaya_audio/src')import argparse
 import os
 import torch
 import numpy as np
